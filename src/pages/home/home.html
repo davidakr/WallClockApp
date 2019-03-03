@@ -15,7 +15,7 @@
   <ion-list>
     <h5>Brightness</h5>  
     <ion-item>
-      <ion-range min="0" max="100" [(ngModel)]="brightness" class="brightness" 
+      <ion-range min="0" max="255" [(ngModel)]="brightness" class="brightness" 
           [disabled]="brightnessDisabled" [ngClass]="{'disabled' : lightSensor}" (ionBlur)="update()">
         <ion-icon small range-left name="sunny"></ion-icon>
         <ion-icon range-right name="sunny"></ion-icon>

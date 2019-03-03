@@ -35,7 +35,7 @@ export class DataProvider {
     this.url = url;    
   }
   public check(){
-    if(this.name === 'LEDclock') {
+    if(this.name === 'WallClock') {
       return true;
     } else {
       return false;
@@ -79,7 +79,7 @@ export class DataProvider {
     this.rgb[1] = data.GREEN_RGB;
     this.rgb[2] = data.BLUE_RGB; 
     this.temperature = data.TEMPERATURE;
-    this.status = data.STATUS;
+    this.status = data.STATE_STATUS;
     this.sensor = (data.BRIGHTNESS_STATUS == "0");
     this.brightness = data.BRIGHTNESS_VALUE;
     this.timezone = data.TIMEZONE;
